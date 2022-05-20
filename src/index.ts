@@ -7,13 +7,11 @@ const makeAccountBalance =
   (accountBalance: number): AccountBalance => accountBalance as AccountBalance;
 
 function setupAccount(accountNumber: AccountNumber, accountBalance: AccountBalance) {
-  // ... setup the account
+	// ... setup the account
+  const doubleBalance = makeAccountBalance(accountBalance * 2);
 }
 
 let accountNumber: AccountNumber = makeAccountNumber(1337);
 let accountBalance: AccountBalance = makeAccountBalance(100);
 
 setupAccount(accountNumber, accountBalance);
-
-// accountNumber = accountBalance;
-// accountBalance = accountNumber;
